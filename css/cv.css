@@ -1,0 +1,241 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --main-transition: 1.5s;
+  --main-color:#45f3ff;
+  --seucond-color:#8f8f8f;
+}
+body {
+  background-color: #23242a;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container .box .me {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.container .box .me .qrim img {
+  width: 150px;
+  height: 150px;
+  animation: roll 3s linear;
+  transform: rotate(180deg);
+  border-radius:30px ;
+  border:3px solid var(--main-color);
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.box .image {
+  padding-top: 80px;
+}
+.box .image img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 5px solid  var(--main-color);
+;
+}
+
+.box .image:hover img {
+  transform: rotatey(150deg);
+  transition: 3s;
+}
+.box .name h1 {
+  font-weight: bold;
+  color: var(--main-color);
+}
+.box .name h2 {
+  font-weight: 200;
+  color: var(--seucond-color);
+  padding-bottom: 30px;
+}
+.box .contact {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  margin-bottom: 30px;
+}
+.box .contact ul {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-left: 50px;
+}
+.box .contact ul a {
+  word-spacing: 5px;
+  padding: 10px;
+  font-size: 12px;
+  color:var(--seucond-color);
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+.box .contact ul .phone:hover {
+  font-size: 15px;
+  color: var(--main-color);
+  transition: var(--main-transition);
+  transform: translatex(-40px);
+}
+.box .contact ul .email:hover {
+  font-size: 15px;
+  color: var(--main-color);
+  transition: var(--main-transition);
+  transform: translatex(-40px);
+}
+.box .contact ul .YouTube:hover {
+  font-size: 15px;
+  color: var(--main-color);
+  transition: var(--main-transition);
+  transform: translate(20px);
+}
+.box .contact ul .github:hover {
+  font-size: 15px;
+  color: var(--main-color);
+  transition: var(--main-transition);
+  transform: translate(20px);
+}
+
+.box .contact ul i {
+  color: red;
+  font-size: 25px;
+}
+.box .contact li {
+  padding: 10px;
+}
+
+.box .contact ul .phone i {
+  color: blue;
+}
+.box .contact ul .email i {
+  color: rgb(106, 36, 77);
+}
+.box .contact ul .YouTube i {
+  color: #ff0000;
+}
+.box .contact ul .github i {
+  color:white ;
+}
+/**/
+
+.pro {
+  margin-bottom: 30px;
+}
+.pro .container {
+  display: flex;
+  justify-content: space-around;
+}
+.pro .container::after {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 700px;
+  background-color: black;
+  border-radius: 40px;
+  margin-top: 30px;
+}
+.pro .container .box-one {
+  display: flex;
+  flex-wrap: wrap;
+}
+.pro .box-one {
+  width: 300px;
+}
+.pro h1 {
+  display: flex;
+  justify-content: center;
+  background-color: var(--seucond-color);
+  width: 300px;
+  padding-left: 20px;
+  border-radius: 25px;
+  color: var(--main-color);
+}
+.pro p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/**/
+.pro .wor .box {
+  width: 300px;
+}
+
+/* display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+        grid-column-gap: 40px;
+        grid-row-gap: 60px; */
+
+        .ro{
+           display: flex;
+  justify-content: center;
+  align-items: center;
+        }
+.box-color {
+  border: solid 50px;
+  border-color: #1c1c1c;
+  position: relative;
+  overflow: hidden;
+  width: 1014px;
+  height: 686.8px;
+ 
+}
+.box-color::before {
+  content: "";
+  position: absolute;
+  width: 1014px;
+  height: 686.8px;
+  background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+  top: -50%;
+  left: -50%;
+  animation: ani 6s linear infinite;
+  transform-origin: bottom right;
+}
+.box-color::after {
+  content: "";
+  position: absolute;
+  width: 1014px;
+  height: 686.8px;
+  background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+  top: -50%;
+  left: -50%;
+  animation: ani 6s linear infinite;
+  transform-origin: bottom right;
+  animation-delay: 3s;
+}
+@keyframes ani {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.form {
+  position: absolute;
+  z-index: 10;
+  inset: 2px;
+  background: #28292d;
+  border-radius: 80px;
+}
+/*  */
